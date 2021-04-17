@@ -1,4 +1,4 @@
-baseURL = "http://outerrim.cc/"
+baseURL = "http://outerrim.netlify.app/"
 languageCode = "en-us"
 title = "The Outer Rim Blog"
 theme = "hyde"
