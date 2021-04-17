@@ -3,4 +3,4 @@
   command = "hugo"
 
 [build.environment]
-  HUGO_VERSION = "0.63.8"
+  HUGO_VERSION = "0.68.3"
