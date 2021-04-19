@@ -1,7 +1,29 @@
-baseURL = "https://outerrim.netlify.app/"
+baseURL = "https://outerrim.cc/"
 languageCode = "en-us"
-title = "The Outer Rim Blog"
-theme = "hyde"
+
+theme = "hyde-hyde"
 
 [params]
-    themeColor = "theme-base-10"
+    description = "Stuff to read while heading to Tosche Station to pick up some power converters..."
+    mainSection = ["posts"]
+
+    logoimage = "/img/logo.svg"
+    copyright = "vgroove"
+    since = 2021
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+[params.social]
+    github = "vgroove"
+    email = "outerrimblog@gmail.com"
+
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 200
+    identifier = "about"
+    url = "/about/"
