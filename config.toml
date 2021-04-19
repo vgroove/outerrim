@@ -13,6 +13,16 @@ theme = "hyde-hyde"
     license = "CC BY-SA 4.0"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
 
+    highlightjs = true
+    highlightjsstyle = "github"
+
+    relatedPosts = true
+
+    disqusShortname = "disqus-shortname"
+    UtterancesRepo = "vgroove/outerrim"
+    UtterancesIssueTerm = "pathname"
+    UtterancesTheme = "github-light"
+
 [params.social]
     github = "vgroove"
     email = "outerrimblog@gmail.com"

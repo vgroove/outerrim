@@ -1,15 +1,11 @@
-+++                                                                                              
- title = "Self Hosted Stock Checking"
- description = ""
- tags = [
-     "huginn",
-     "self-hosted",
- ]
- date = "2021-01-22"
- categories = [
-     "self-hosted",
- ]
- +++
+---
+author: "vgroove"
+title: "Self Hosted Stock Checking"
+tags: ["huginn", "self-hosted"]
+date: 2021-01-22
+categories: ["self-hosted"]
+weight: 10
+---
 
  In the times of COVID-19, many things sold online are currently out of stock. Some people enjoy constantly hitting F5 on webpages, but for the rest of us there has to be a better way.
 
