@@ -2,3 +2,6 @@ baseURL = "https://outerrim.netlify.app/"
 languageCode = "en-us"
 title = "The Outer Rim Blog"
 theme = "hyde"
+
+[params]
+    themeColor = "theme-base-10"
