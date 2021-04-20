@@ -4,11 +4,11 @@ title: "Self Hosted Stock Checking"
 tags: ["huginn", "self-hosted"]
 date: 2021-01-22
 categories: ["self-hosted"]
-image: "img/huginn_icon.png"
+image: "/img/huginn_icon.png"
 weight: 10
 ---
 
- In the times of COVID-19, many things sold online are currently out of stock. Some people enjoy constantly hitting F5 on webpages, but for the rest of us there has to be a better way.
+In the times of COVID-19, many things sold online are currently out of stock. Some people enjoy constantly hitting F5 on webpages, but for the rest of us there has to be a better way.
 
 There are a couple of browser extension options and cloud-based options such as [Distill.io](https://distill.io/) which work great, but cost money or require a browser to be left open and running. Anyone who runs a home server has a couple more efficient options:
 
