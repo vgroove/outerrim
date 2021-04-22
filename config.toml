@@ -24,6 +24,10 @@ googleAnalytics = "G-F8574VB7HR"
     UtterancesIssueTerm = "pathname"
     UtterancesTheme = "github-light"
 
+[imaging.exif]
+    disableLatLong = true
+    disableDate = true
+
 [params.social]
     github = "vgroove"
     rss = "https://www.outerrim.cc/posts/index.xml"
@@ -40,6 +44,3 @@ googleAnalytics = "G-F8574VB7HR"
     identifier = "about"
     url = "/about/"
 
-[imaging.exif]
-    disableLatLong = true
-    disableDate = true
