@@ -23,6 +23,8 @@ theme = "hyde-hyde"
     UtterancesIssueTerm = "pathname"
     UtterancesTheme = "github-light"
 
+    googleAnalytics = "G-F8574VB7HR"
+
 [params.social]
     github = "vgroove"
     rss = "https://www.outerrim.cc/posts/index.xml"
