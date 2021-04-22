@@ -5,6 +5,7 @@ tags: ["3d-printing"]
 date: 2021-04-22
 categories: ["3d-printing"]
 weight: 10
+draft: "true"
 resources:
 - src: "images/door-stopper.jpg"
   title: "Door Stopper"
