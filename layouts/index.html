@@ -15,7 +15,12 @@
         <span class="item__title--big">
           <a href="{{ .RelPermalink }}" {{if .Scratch.Get "draftPage" }}class="draft"{{end}}>{{ .Title }}</a>
         </span>
-        <img src="{{ with .Params.image }}{{ . }}{{ end }}" height="100"/>
+        <!--<img src="{{ with .Params.image }}{{ . }}{{ end }}" height="100"/>-->
+        {{ $image := .Resources.GetMatch "featured" }} 
+        {{ with $image }}
+        {{ $scaled := .Resize "x100" }}
+        <img style="max-width: 100%; width: auto; height: auto;" src="{{ $scaled.RelPermalink }}"/>
+        {{ end }}
         <span class="item__date">
           {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
         </span>

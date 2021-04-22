@@ -1,6 +1,13 @@
 {{ if ne .Params.showpagemeta false }}
 <div class="post__meta">
-    <img src="{{ with .Params.image }}{{ . }}{{ end }}" height="150"/>
+
+    <!--<img src="{{ with .Params.image }}{{ . }}{{ end }}" height="150"/>-->
+    {{ $image := .Resources.GetMatch "featured" }}
+    {{ with $image }}
+    {{ $scaled := .Resize "x150" }}
+    <img style="max-width: 100%; width: auto; height: auto;" src="{{ $scaled.RelPermalink }}"/>
+    {{ end }}
+
     <!-- published date -->
     {{ if not .Date.IsZero }}
       <i class="fas fa-calendar-alt"></i> {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
