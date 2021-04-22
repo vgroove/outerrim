@@ -39,3 +39,7 @@ googleAnalytics = "G-F8574VB7HR"
     weight = 200
     identifier = "about"
     url = "/about/"
+
+[imaging.exif]
+    disableLatLong = true
+    disableDate = true

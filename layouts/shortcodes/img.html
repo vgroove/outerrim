@@ -1,0 +1,29 @@
+{{ if .Get "caption" }}                                                                          
+  {{ $.Scratch.Set "caption" (.Get "caption") }}
+{{ end }}
+
+{{ $image := .Page.Resources.GetMatch (.Get "path") }}
+{{ .Scratch.Set "modified-image" $image }}
+
+{{ if .Get "method" }}
+  {{ $method := .Get "method" }}
+  {{ $options := .Get "options" }}
+
+  {{ if eq $method "Fill" }}
+      {{ .Scratch.Set "modified-image" ($image.Fill $options) }}
+  {{ else if eq $method "Fit" }}
+      {{ .Scratch.Set "modified-image" ($image.Fit $options) }}
+  {{ else if eq $method "Resize" }}
+      {{ .Scratch.Set "modified-image" ($image.Resize $options) }}
+  {{ end }}
+{{ end }}
+
+<img src='{{ (.Scratch.Get "modified-image").Permalink }}' alt='{{ .Get "alt" }}'>
+
+{{ if ($.Scratch.Get "caption") }}
+<figcaption>
+    <span class="img--caption">
+         {{ $.Scratch.Get "caption" | markdownify | plainify }}
+    </span>
+</figcaption>
+{{ end }}
