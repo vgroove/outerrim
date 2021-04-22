@@ -1,0 +1,3 @@
+# Ensure exiftool is installed
+# Move this file into .git/hooks to strip exif before commit
+exiftool -all= -overwrite_original -r .
