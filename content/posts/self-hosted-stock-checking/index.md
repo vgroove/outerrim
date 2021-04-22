@@ -40,3 +40,21 @@ Once that is up and running we can create new "Website Agent" that will monitor 
 ```
 
 I got the `xpath` by simply opening up the developer tools in Chrome, using the pointer tool to highlight the "Out of Stock" element, then right clicking the element and going to Copy -> XPath.
+
+As another example, here's a configuration I made to check the status of the Walmart page for a PS5. Happy gaming!
+
+```
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.walmart.com/ip/PlayStation5-Console/363472942",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "stock": {
+      "xpath": "/html/body/div",
+      "value": "."
+    }
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+}
+```
