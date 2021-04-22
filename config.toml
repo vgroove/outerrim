@@ -25,6 +25,7 @@ theme = "hyde-hyde"
 
 [params.social]
     github = "vgroove"
+    rss = "https://www.outerrim.cc/posts/index.xml"
     email = "outerrimblog@gmail.com"
 
 [[menu.main]]
