@@ -35,7 +35,7 @@
       {{ $image := .Resources.GetMatch "featured" }} 
       {{ with $image }}
       {{ $scaled := .Resize "x100" }}
-      <enclosure url="{{ $scaled.Permalink }}" />
+      <enclosure url="{{ $scaled.Permalink }}" type="{{ $scaled.MediaType }}" length="{{ len $scaled.Content }}" />
       {{ end }}
       <description>{{ .Summary | html }}</description>
     </item>
