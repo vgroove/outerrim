@@ -3,7 +3,7 @@ author: "vgroove"
 title: "Self Hosted Stock Checking"
 tags: ["huginn", "self-hosted"]
 date: 2021-01-22
-categories: ["self-hosted"]
+categories: ["self-hosted", "IT"]
 weight: 10
 resources:
 - src: "images/huginn_icon.png"
