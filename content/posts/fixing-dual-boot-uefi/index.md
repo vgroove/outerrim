@@ -12,4 +12,6 @@ resources:
   name: featured
 ---
 
-The dreaded Windows Update comes for us all.
+The dreaded Windows update comes for us all. When it came for me recently Windows decided to completely bork my newly set-up dual-booted laptop. I was running Windows 10 and Pop!_OS with a UEFI based mobo. Instead of grub I went for the newer systemd-boot to give it a shot
+
+efibootmgr --create --disk /dev/sda --part 1 --label "My new label" --loader \\EFI\\ubuntu\\shimx64.efi
