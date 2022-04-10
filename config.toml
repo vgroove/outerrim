@@ -1,4 +1,4 @@
-baseURL = "https://www.outerrim.cc/"
+baseURL = "https://www.outerrim.dev/"
 languageCode = "en-us"
 
 theme = "hyde-hyde"
@@ -34,7 +34,7 @@ googleAnalytics = "G-F8574VB7HR"
 
 [params.social]
     github = "vgroove"
-    rss = "https://www.outerrim.cc/posts/index.xml"
+    rss = "https://www.outerrim.dev/posts/index.xml"
     email = "outerrimblog@gmail.com"
 
 [[menu.main]]

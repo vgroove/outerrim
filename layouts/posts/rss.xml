@@ -17,7 +17,7 @@
     <link>{{ .Permalink }}</link>
     <description>Posts from {{ .Site.Title }}</description>
     <image>
-        <url>https://www.outerrim.cc/favicon.png</url>
+        <url>https://www.outerrim.dev/favicon.png</url>
         <title>{{ .Site.Title }}</title>
         <link>{{ .Permalink }}</link>
     </image>
