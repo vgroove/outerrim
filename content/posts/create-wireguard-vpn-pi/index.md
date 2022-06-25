@@ -20,18 +20,18 @@ There are lots of tutorials online about setting up Wireguard on a Raspberry Pi,
 ### Install Wireguard
 
 1. Install Raspberry Pi OS:
-  1. Using their imager tool:
-    1. Download `rpi-imager` from your package manager or from the [RPi website](https://www.raspberrypi.com/software/).
-    1. Using `rpi-imager` install Raspberry Pi OS Lite to your SD card with the following options:
-      1. Create user (in my case `wg`).
-      1. Allow ssh.
-      1. Set the hostname (in my case `wireguard`).
-  1. Using `dd`:
-    1. Download the Raspberry Pi OS Lite image from the [RPi website](https://www.raspberrypi.com/software/).
-    1. Flash the image to your SD card using something like `sudo dd if=/path/to/os.img of=/dev/SD_CARD_PATH conv=fsync bs=64K status=progress`. The `conv=fsync` insures the entire contents are written to the card itself by the end of the `dd` operation, there's a good explanation [here](https://abbbi.github.io/dd/).
-    1. Use `echo 'mypassword' | openssl passwd -6 -stdin` to created a file `userconf.txt` in the boot partition of new SD card with the format `username:encrypted-password`. I made the user `wg`.
-    1. Use `touch ssh` in the root of the boot partition of the SD card to allow ssh on first boot.
-    1. Edit `/etc/host` to be the desired hostname (in my case `wireguard`)
+    1. Using their imager tool:
+        1. Download `rpi-imager` from your package manager or from the [RPi website](https://www.raspberrypi.com/software/).
+        1. Using `rpi-imager` install Raspberry Pi OS Lite to your SD card with the following options:
+            1. Create user (in my case `wg`).
+            1. Allow ssh.
+            1. Set the hostname (in my case `wireguard`).
+    1. Using `dd`:
+        1. Download the Raspberry Pi OS Lite image from the [RPi website](https://www.raspberrypi.com/software/).
+        1. Flash the image to your SD card using something like `sudo dd if=/path/to/os.img of=/dev/SD_CARD_PATH conv=fsync bs=64K status=progress`. The `conv=fsync` insures the entire contents are written to the card itself by the end of the `dd` operation, there's a good explanation [here](https://abbbi.github.io/dd/).
+        1. Use `echo 'mypassword' | openssl passwd -6 -stdin` to created a file `userconf.txt` in the boot partition of new SD card with the format `username:encrypted-password`. I made the user `wg`.
+        1. Use `touch ssh` in the root of the boot partition of the SD card to allow ssh on first boot.
+        1. Edit `/etc/host` to be the desired hostname (in my case `wireguard`)
 1. Boot up the pi and ssh into it.
 1. Run a `sudo apt update` and `sudo apt upgrade`.
 1. Run `sudo apt install wireguard`.
