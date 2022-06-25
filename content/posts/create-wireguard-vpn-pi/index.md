@@ -39,6 +39,8 @@ There are lots of tutorials online about setting up Wireguard on a Raspberry Pi,
 
 ### Install Linguard
 
+{{< img path="images/linguard-screenshot.png" caption="Linguard has a nice UI that even shows interface usage per client!" method="Fit" options="600x800" alt="Linguard Screenshot" >}}
+
 1. Download the latest release from the [Linguard github](https://github.com/joseantmazonsb/linguard).
 1. I had to use `sudo apt install libopenjp2-7` in order to have all the dependencies for Libguard 1.1.
 1. Untar the source you downloaded and run the `install.sh` script.
