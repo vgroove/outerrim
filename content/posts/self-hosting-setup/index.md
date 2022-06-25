@@ -1,7 +1,7 @@
 ---
+draft: true
 author: "vgroove"
 title: "Self Hosting with Low Maintenance"
-draft: true
 tags: ["self-hosted"]
 date: 2022-03-31
 categories: ["self-hosted", "IT"]
