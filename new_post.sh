@@ -47,3 +47,4 @@ resources:
   title: ""
   name: featured
 ---
+EOF
